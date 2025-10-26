@@ -5,6 +5,14 @@ import * as LabelPrimitive from "@radix-ui/react-label"
 
 import { cn } from "@/lib/utils"
 
+/**
+ * Render a label element with preset layout and disabled styles.
+ *
+ * Additional props are forwarded to the underlying label element.
+ *
+ * @param className - Additional class names to append to the label's class list
+ * @returns A React label element with composed class names and `data-slot="label"`
+ */
 function Label({
   className,
   ...props
