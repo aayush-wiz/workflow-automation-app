@@ -6,7 +6,10 @@ import { requireUnAuth } from "@/lib/auth-utils";
  *
  * @returns A React element containing the registration form.
  */
-export default async function RegisterPage() {
+
+const RegisterPage = async () => {
   await requireUnAuth();
   return <RegisterForm />;
-}
+};
+
+export default RegisterPage;
